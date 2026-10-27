@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="stylesheet" href="cartetyia.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>卡提西亚 · 换装工坊</title>
+
+</head>
+<body>
+
+  <!-- 背景 -->
+  <div class="bg"></div>
+  <!-- 飘落花瓣（由 JS 生成） -->
+  <div class="petals" id="petals"></div>
+
+  <!-- 导航栏 -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark">✿</span>
+      <span>卡提西亚 · 换装工坊</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">首页</a>
+      <a href="movenbackground.html">动态背景</a>
+      <a href="#gallery">服装图鉴</a>
+      <a href="#about">关于</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- 首屏 -->
+  <main class="hero" id="home">
+    <p class="eyebrow rise d1">Wuthering Waves · 角色换装</p>
+    <h1 class="rise d2">来看看<em>卡提西亚</em><br>的各种服装—Welcome to <em>Cartethyia</em> clothing workshop</h1>
+
+    <div class="cta rise d4">
+      <a href="#studio" class="btn btn-primary">开始</a>
+      <a href="#gallery" class="btn btn-ghost">看看图鉴</a>
+    </div>
+  </main>
+
+  <!-- 占位区块（以后在这里接功能） -->
+  <section class="panel" id="studio">
+    <h2>卡提西亚</h2>
+    <p>在这下面将会有各种各样的卡提西亚</p>
+  </section>
+  <div class="character-stage">
+    <img class="character-base" src="cartetyiamoving.webp" alt="角色底图" />
+  </div>
+
+
+
+  <section class="panel" id="gallery">
+    <h2>服装图鉴</h2>
+    <div class="gallery-layout">
+      <div class="gallery-preview">
+        <img id="galleryPreviewImage" src="schoolshoes.jpg" alt="当前展示图" />
+        <div class="gallery-preview-meta">
+          <span id="galleryPreviewTitle">学院服</span>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card selected" data-title="学院服">
+          <img src="schoolshoes.jpg" alt="卡提西亚 01" />
+          <span>学院服</span>
+        </article>
+        <article class="gallery-card" data-title="wowwwwoww">
+          <img src="wowww.jpg" alt="卡提西亚 02" />
+          <span>夜色长裙</span>
+        </article>
+        <article class="gallery-card" data-title="swimmmmm">
+          <img src="nobad.jpg" alt="卡提西亚 03" />
+          <span>青玉战衣</span>
+        </article>
+        <article class="gallery-card" data-title="cute">
+          <img src="Resonator_Chibi.webp" alt="卡提西亚 04" />
+          <span>轻纱流云</span>
+        </article>
+        <article class="gallery-card" data-title="i love sea">
+          <img src="OMG.jpg" alt="卡提西亚 05" />
+          <span>星月雪衣</span>
+        </article>
+        <article class="gallery-card" data-title="森林巡礼">
+          <img src="cartethyia1.jpg" alt="卡提西亚 06" />
+          <span>森林巡礼</span>
+        </article>
+        <article class="gallery-card" data-title="森林巡礼">
+          <img src="cartethyia1.jpg" alt="卡提西亚 06" />
+          <span>森林巡礼</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="about">
+    <h2>关于这个网页</h2>
+    <p>这网页是本人一个练习用的小项目，用来学习「AI 辅助开发」感受一下AI的魅力。这里的内容大部分由AI完成，我只是提出创意，想法，图片素材是我自己在网络找的。</p>
+  </section>
+
+  
+
+<script src="scrp.js"></script>
+</body>
+</html>
